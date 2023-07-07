@@ -1,0 +1,121 @@
+/*======Pré-definições======*/
+body {
+    margin: 0px;
+}
+
+* h2, h3, h4, p {
+    margin: 0px;
+}
+
+main { 
+    /*Manter o contorno na fase beta para facilitar a visão da box*/
+    max-width: 800px;
+    border-color: rgb(150, 0, 0);
+    border-style: solid;
+    margin: auto;
+}
+
+:root {
+    --cor0: #212121;
+    --cor1: #fafafa;
+    --cor2: #ececec;
+    --cor3: #c5c5c5;
+    --cor4: #424242;
+}
+
+@font-face {
+    font-family: 'oswald';
+    src: url('fonts/oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'barlow-semi';
+    src: url('fonts/barlow-semi/BarlowSemiCondensed-Light.ttf') format('truetype');
+}
+
+/*========Estilo de cabeçalho e Titulos==========*/
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor0);
+    display: flex;
+}
+
+h1 {
+    margin: auto;
+    color: var(--cor1);
+    font-family: 'oswald', sans-serif;
+    font-weight: 400;
+}
+
+/*=======Estilo para conteúdo e Subtítulos======*/
+h2 {
+    font-family: 'oswald', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'oswald', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+h4 {
+    background-color: var(--cor3);
+    font-family: 'oswald';
+    font-weight: 500;
+    font-size: 20px;
+
+    width: 250px;
+    text-align: center;
+    margin: auto;
+
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+p {
+    font-family: 'barlow-semi', sans-serif;
+    font-weight: 300;
+}
+
+div.box-conteudo {
+    /*Quadrado de fundo cinza para destacar algum aviso*/
+    background-color: var(--cor2);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 7px;
+    line-height: 35px;
+}
+
+div.partes {
+    background-color: var(--cor0);
+    border-top-style: solid;
+    color: var(--cor1);
+    text-align: center;
+    padding: 15px 0px;
+    margin: 20px 0px;
+}
+
+/*========Estilo para a tabela=========*/
+table {
+    border-spacing: 0px;
+    margin: auto;
+}
+
+th {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 7px;
+    background-color: white;
+    font-family: 'barlow-semi', sans-serif;
+}
+
+thead > tr > th {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+}
