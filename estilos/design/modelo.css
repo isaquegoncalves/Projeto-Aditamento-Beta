@@ -28,12 +28,12 @@ main {
 /*Importação de fontes baixadas*/
 @font-face {
     font-family: 'oswald';
-    src: url('fonts/oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/oswald/Oswald-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'barlow-semi';
-    src: url('fonts/barlow-semi/BarlowSemiCondensed-Light.ttf') format('truetype');
+    src: url('../fonts/barlow-semi/BarlowSemiCondensed-Light.ttf') format('truetype');
 }
 
 /*========Estilo de cabeçalho e Titulos==========*/
@@ -49,6 +49,7 @@ h1 {
     color: var(--cor1);
     font-family: 'oswald', sans-serif;
     font-weight: 400;
+    font-size: 35px;
 }
 
 header > p {
@@ -63,6 +64,11 @@ h2 {
     font-weight: 400;
     font-size: 33px;
     margin: 8px 0px;
+}
+
+.rodape {
+    text-align: center;
+    line-height: 30px;
 }
 
 h3 {
@@ -111,6 +117,20 @@ div.partes {
 
 li {
     font-family: 'barlow-semi';
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor0);
+    color: var(--cor1);
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
 }
 
 /*========Estilo para a tabela=========*/
