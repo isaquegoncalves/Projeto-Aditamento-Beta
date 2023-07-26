@@ -39,17 +39,33 @@ main {
 /*========Estilo de cabeçalho e Titulos==========*/
 header {
     width: 100%;
-    height: 80px;
+    height: 83px;
     background-color: var(--cor0);
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#brasao {
+    max-width: 10.5%;
+    min-width: 70px;
+    display: block;
+    margin: auto;
 }
 
 h1 {
-    margin: auto;
     color: var(--cor1);
     font-family: 'oswald', sans-serif;
     font-weight: 400;
     font-size: 35px;
+    margin: auto;
+    text-align: center;
+    line-height: 33px;
+}
+
+span {
+    font-size: 15px;
+    font-weight: 200;
 }
 
 header > p {
@@ -62,7 +78,7 @@ header > p {
 h2 {
     font-family: 'oswald', sans-serif;
     font-weight: 400;
-    font-size: 33px;
+    font-size: 29px;
     margin: 8px 0px;
 }
 
@@ -102,7 +118,7 @@ div.box-conteudo {
     padding: 15px;
     margin: 20px;
     border-radius: 7px;
-    line-height: 33px;
+    line-height: 30px;
 }
 
 div.partes {
@@ -119,8 +135,9 @@ li {
     font-family: 'barlow-semi';
 }
 
-img {
-    width: 50%;
+img#box-img {
+    max-width: 40%;
+    min-width: 200px;
     display: block;
     margin: auto;
 }
