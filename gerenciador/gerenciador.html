@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador do Aditamento</title>
+    <link rel="stylesheet" href="../estilos/design/modelo-principal.css">
+    <link rel="icon" href="../estilos/imagens/icones/favicon-eng/favicon-16x16.png" type="image/png">
+
+</head>
+<body>
+    <main>
+        <header> 
+            <h1>Aditamento Online <span>Gerenciador (Beta)</span></h1>
+            <img id="brasao" src="../estilos/imagens/brasao.png" alt="brasão">
+        </header>
+
+        <div class="box-conteudo">
+            <h2>1º Bateria de Mísseis</h2>
+            <p>Para começar a criar o aditamento informe os Postos, Missões, Avisos, Expediente e Justiça & Disciplina.</p>
+            <p><strong>OBS:</strong> Caso determinado posto não seja informado, ele não será exibido na página principal do Aditamento Online.</p>
+        </div>
+        
+        <!---------1º Parte---------->
+        <div class="editor-partes">
+            <h3>Editor da 1º Parte - Serviços Diários</h3>
+            <br>
+            <form action="#">
+                <label for="parte1" class="parte">Descrição:</label>
+
+                <input type="text" id="parte1" class="parte" placeholder="Ex: Escala para o dia 28 de Julho de 2023. (Desabilitado)">
+            </form>
+        </div>
+
+        <!--========SERVIÇOS INTERNOS========-->
+        <h4>Serviços Internos</h4>
+
+            <!--(INÍCIO)-Formulário de envio-->
+            <form action="retorno.php" method="post">
+                <div class="guarda">
+                    <label for="alfandega" class="etiqueta">Desembaraço Alfandegário: </label>
+                    <input type="text" name="n_alfandega" id="alfandega" class="posto" placeholder="Ex: 1º Ten Z">
+                </div>
+
+                <div class="guarda">
+                    <label for="telefonista" class="etiqueta">Telefonista: </label>
+                    <input type="text" name="n_telefonista" id="telefonista" class="posto" placeholder="Ex: Sd EP X">
+                </div>
+
+                <div class="guarda">
+                    <label for="bombeiro" class="etiqueta">Bombeiro de dia: </label>
+                    <input type="text" name="n_bombeiro" id="bombeiro" class="posto" placeholder="Ex: Sd EP X">
+                </div>
+
+                <div class="guarda">
+                    <label for="ht" class="etiqueta">Permanência ao HT: </label>
+                    <input type="text" name="n_ht" id="ht" class="posto" placeholder="Ex: Sd Ep X">
+                </div>
+
+                <div class="guarda">
+                    <label for="rancho" class="etiqueta">Auxiliar de dia ao Rancho: </label>
+                    <input type="text" name="n_rancho" id="rancho" class="posto" placeholder="Ex: Recruta 500">
+                </div>
+
+                <div class="guarda">
+                    <label for="motorista" class="etiqueta">Motorista de dia: </label>
+                    <input type="text" name="n_motorista" id="motorista" class="posto" placeholder="Ex: Sd EP X">
+                </div>
+
+                <div class="guarda">
+                    <label for="patrulha" class="etiqueta">Patrulha Marítima: </label>
+                    <input type="text" name="n_patrulha" id="patrulha" class="posto" placeholder="Ex: Sgt X / Cb Y">
+                </div>
+
+        <!---------ESCALA DA GUARDA---------->
+        <h4>Escala da guarda</h4>
+            
+            <div class="guarda">
+                <label for="sup" class="etiqueta">Superior de dia: </label>
+                <input type="text" name="n_sup" id="sup" class="posto" placeholder="Ex: Cap X">
+            </div>
+
+            <div class="guarda">
+                <label for="oficial" class="etiqueta">Oficial de dia: </label>
+                <input type="text" name="n_oficial" id="oficial" class="posto" placeholder="Ex: 1º Ten X">
+            </div>
+
+            <div class="guarda">
+                <label for="adjunto" class="etiqueta">Adjunto: </label>
+                <input type="text" name="n_adjunto" id="adjunto" class="posto" placeholder="Ex: 2º Sgt X">
+            </div>
+
+            <div class="guarda">
+                <label for="cmtg" class="etiqueta">Comandante da Guarda: </label>
+                <input type="text" name="n_cmtg" id="cmtg" class="posto" placeholder="Ex: 3º Sgt X">
+            </div>
+
+            <div class="guarda">
+                <label for="cbg" class="etiqueta">Cabo da Guarda: </label>
+                <input type="text" name="n_cbg" id="cbg" class="posto" placeholder="Ex: Cb X">
+            </div>
+
+            <div class="guarda">
+                <label for="p1" class="etiqueta">P1: </label>
+                <input type="text" name="n_p1" id="p1" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+            <div class="guarda">
+                <label for="p2" class="etiqueta">P2: </label>
+                <input type="text" name="n_p2" id="p2" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+            <div class="guarda">
+                <label for="p3" class="etiqueta">P3: </label>
+                <input type="text" name="n_p3" id="p3" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+            <div class="guarda">
+                <label for="p4" class="etiqueta">P4: </label>
+                <input type="text" name="n_p4" id="p4" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+            <div class="guarda">
+                <label for="p5" class="etiqueta">P5: </label>
+                <input type="text" name="n_p5" id="p5" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+            <div class="guarda">
+                <label for="p6" class="etiqueta">P6: </label>
+                <input type="text" name="n_p6" id="p6" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+            <div class="guarda">
+                <label for="p7" class="etiqueta">P7: </label>
+                <input type="text" name="n_p7" id="p7" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+            <div class="guarda">
+                <label for="p8" class="etiqueta">P8 </label>
+                <input type="text" name="n_p8" id="p8" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+            <div class="guarda">
+                <label for="p9" class="etiqueta">P9: </label>
+                <input type="text" name="n_p9" id="p9" class="posto" placeholder="Ex: 500 Recruta">
+            </div>
+
+        <!--======SERVIÇOS DA SU======-->
+        <h4>Serviços na SU</h4>
+            <div class="guarda">
+                <label for="sgtdia" class="etiqueta">Sargento de dia: </label>
+                <input type="text" name="n_sgtdia" id="sgtdia" class="posto" placeholder="Ex: 3º Sgt X">
+            </div>
+
+            <div class="guarda">
+                <label for="cbdia" class="etiqueta">Cabo de dia: </label>
+                <input type="text" name="n_cbdia" id="cbdia" class="posto" placeholder="Ex: CB Z">
+            </div>
+
+            <div class="guarda">
+                <label for="plantoes" class="etiqueta">Plantões: </label>
+                <input type="text" name="n_plantoes" id="plantoes" class="posto" placeholder="Ex: 500 Recruta e 500 Recruta e 500 Recruta">
+            </div>
+
+                <input class="enviar" type="submit" value="Enviar Dados">
+            <!--(FINAL)-Formulário de envio-->
+            </form>
+            
+        
+    <!-------2º Parte------->
+        <footer>
+            <p> &copy; Desenvolvido por 517 <strong>Brandão</strong></p>
+        </footer>
+    </main>
+</body>
+</html>
